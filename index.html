@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Fit & Flex Gym</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,8 +30,18 @@ width: 290px;
 }
 
    body{
-    
+    background-color: whitesmoke;
    }
+   .nav-item:hover{
+    background-color:pink;
+   }
+   
+   .whatsapp {
+        position: fixed;
+        bottom: 280px;
+        right: 34px;
+        z-index: 9999; /* Ensure it appears above other content */
+    }
    /* body{
     background-color: bisque;
    } */
@@ -39,73 +49,78 @@ width: 290px;
 </head>
   <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand mx-3" href="#">
         <img src="./WhatsApp Image 2024-05-13 at 1.54.33 PM.jpeg" alt="Fit and Flex Logo" height="40">
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav mx-3">
           <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="#home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="#about">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Photos</a>
+            <a class="nav-link" href="#photos">Photos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" hrebody buf="#">Contact</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
     </nav>
    <div class="container">
-    <div class="row index">
-      <div class="col-md-7">
+    <div class="row index" id="home">
+      <div class="col-md-7 mt-5">
         <h1>Welcome to Fit and Flex Gym</h1>
         <p>At Fit and Flex, we believe in more than just physical fitness; we're dedicated to helping you achieve holistic well-being. Our state-of-the-art facilities, expert trainers, and diverse range of classes cater to every fitness level and goal. Whether you're looking to build strength, improve flexibility, or simply enhance your overall health, we're here to support and guide you on your journey. Join us today and experience the difference at Fit and Flex!</p>
       <button class="btn btn-primary">Get Started</button>
       </div>
-      <div class="col-md-5">
-        <img src="./master.jpg" width="450px">
+      <div class="col-md-5 mt-3">
+        <img src="./master.jpg" width="400px">
       </div>
       </div>
       <div>
+        <hr>
         <section class="container my-5">
           <div class="row">
-            <div class="col-md-7">
-              <h2>About Us</h2>
-              <p>Welcome to Gym Name! We are dedicated to helping you achieve your fitness goals. Our experienced trainers and state-of-the-art facilities are here to support you on your fitness journey.</p>
-              <p>At Gym Name, we offer a variety of fitness classes, personal training sessions, and cutting-edge equipment to help you reach your full potential. Whether you're a beginner or an experienced athlete, we have something for everyone.</p>
+            <div class="col-md-7" id="about">
+              <h2 class="fw-bold">About Us</h2>
+              <p>We are dedicated to helping you achieve your fitness goals. Our experienced trainers and state-of-the-art facilities are here to support you on your fitness journey.</p>
+              <p>At Fit & Flex, we offer a variety of fitness classes, personal training sessions, and cutting-edge equipment to help you reach your full potential. Whether you're a beginner or an experienced athlete, we have something for everyone.</p>
              
             </div>
             <div class="col-md-5">
-              <img src="./pexels-anush-1431282.jpg" class="" width="200px">
+              <img src="./about.png" class="" width="400px">
             </div>
           </div>
         </section>
         
       </div>
 
-
+      <div class="whatsapp">
+        <a href="https://wa.me/9677196867" target="_blank">
+        <img src="./whatsapp.png" alt="" title="WhatsApp">
+    </a>
+    </div>
 
 
 
 
       <div class="row">
         <div class="col-md-4">
-          <img src="./gallery4.png" alt="Your Image" class="" style="width:150px;">
-          <p class="">Body Building</p>
+          <img src="./gallery4.png" alt="Your Image" class="img-fluid">
+          <p class="text-center">Body Building</p>
         </div>
         <div class="col-md-4">
-          <img src="./team2.png" alt="Your Image" class="">
-          <p class="text-center">Muscle</p>
+          <img src="./team2.png" alt="Your Image" class="img-fluid" style="height: 293px;">
+          <p class="text-center">Muscle Gain</p>
           </div>
             <div class="col-md-4">
-              <img src="./cat2.png" alt="Your Image" class="" style="height: 293px;">
+              <img src="./cat2.png" alt="Your Image" class="img-fluid"style="height: 293px;">
               <p class="text-center">Weight Loss</p>
         </div>
       </div>
@@ -116,18 +131,19 @@ width: 290px;
 
 <!-- 
       section -->
-      <h1 class="text-center">Transformations</h1>
+    <hr>
+      <h1 class="text-center fw-bold" id="photos">Transformations</h1>
       <div class="row mt-5">
-        <div class="col-md-3">
+        <div class="col-md-3 mt-3">
           <img src="./WhatsApp Image 2024-06-03 at 18.20.32_84f36ee4.jpg" width="200px">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-3">
           <img src="./WhatsApp Image 2024-06-03 at 18.21.14_7490f53f.jpg" width="200px">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-3">
           <img src="./WhatsApp Image 2024-06-03 at 18.21.23_63cb06b0.jpg" width="200px">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-3">
           <img src="./WhatsApp Image 2024-06-03 at 18.21.34_6d3c7110.jpg" width="200px">
         </div>
       </div>
@@ -135,13 +151,13 @@ width: 290px;
         <div class="col-md-3">
           <img src="./WhatsApp Image 2024-06-03 at 18.33.59_01ac8f92.jpg" width="200px">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-3">
           <img src="./WhatsApp Image 2024-06-03 at 18.34.00_b0619183.jpg" width="200px">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-3">
           <img src="./crop.jpg" width="180px" height="200px">
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 mt-3">
           <img src="./crop2.jpg" width="200px">
         </div>
       </div>
@@ -182,20 +198,20 @@ width: 290px;
                 </div>
               </div>
             </div> -->
-            
+            <hr>
           <div class="d-flex justify-content-center">
             
             <form id="whatsappForm">
-              <div class="form-group mt-5">
-                <h1>Contact Us</h1>
+              <div class="form-group mt-5" id="contact">
+                <h1 class="fw-bold">Contact Us</h1>
                 <label for="name">Your Name:</label>
                 <input type="text" class="form-control" id="name" placeholder="Enter your name">
               </div>
-              <div class="form-group">
+              <div class="form-group mt-2">
                 <label for="message">Message:</label>
                 <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
               </div>
-              <button type="button" class="btn btn-primary" id="sendWhatsapp">Send Message</button>
+              <button type="button" class="btn btn-primary mt-3" id="sendWhatsapp">Send Message</button>
             </form>
           </div>
           <div class="row mt-3">
@@ -240,6 +256,12 @@ $(document).ready(function(){
       window.open(whatsappLink, '_blank');
     });
   });
+  window.addEventListener("scroll", function() {
+            var element = document.getElementById("whatsapp");
+            var rect = element.getBoundingClientRect();
+            var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            element.style.top = rect.top + scrollTop + "px";
+        });
 </script>
 
 
